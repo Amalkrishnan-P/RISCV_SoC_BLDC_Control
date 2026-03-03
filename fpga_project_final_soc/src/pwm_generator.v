@@ -67,6 +67,6 @@ module pwm_generator (
     end
 
     // PWM output generation
-    assign pwm_out = pwm_enable ? (counter_pwm < duty_cycle) : 1'b0;
+    assign pwm_out = ~(pwm_enable ? (counter_pwm < duty_cycle) : 1'b0);
 
 endmodule

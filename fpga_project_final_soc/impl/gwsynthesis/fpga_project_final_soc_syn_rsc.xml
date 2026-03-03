@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Module name="top" Lut="272" T_Register="1278(0)" T_Alu="511(0)" T_Lut="2892(272)" T_MULT36X36="1(0)" T_Bsram="6(0)">
+<Module name="top" Lut="279" T_Register="1278(0)" T_Alu="511(0)" T_Lut="2909(279)" T_MULT36X36="1(0)" T_Bsram="6(0)">
  <SubModule name="reset_controller" Register="6" Alu="6" Lut="3" T_Register="6(6)" T_Alu="6(6)" T_Lut="3(3)"/>
- <SubModule name="uart" Lut="4" T_Register="131(0)" T_Alu="124(0)" T_Lut="102(4)">
-  <SubModule name="uart" Register="131" Alu="124" Lut="98" T_Register="131(131)" T_Alu="124(124)" T_Lut="98(98)"/>
+ <SubModule name="uart" Lut="4" T_Register="131(0)" T_Alu="124(0)" T_Lut="101(4)">
+  <SubModule name="uart" Register="131" Alu="124" Lut="97" T_Register="131(131)" T_Alu="124(124)" T_Lut="97(97)"/>
  </SubModule>
- <SubModule name="cdt" Register="34" Lut="76" T_Register="34(34)" T_Lut="76(76)"/>
- <SubModule name="pwm" Register="27" Alu="3" Lut="30" T_Register="27(27)" T_Alu="3(3)" T_Lut="30(30)"/>
- <SubModule name="bldc" Register="16" Lut="16" T_Register="16(16)" T_Lut="16(16)"/>
- <SubModule name="i2c" Register="17" Lut="7" T_Register="90(17)" T_Lut="169(7)">
-  <SubModule name="i2c_core" Register="73" Lut="162" T_Register="73(73)" T_Lut="162(162)"/>
+ <SubModule name="cdt" Register="34" Lut="78" T_Register="34(34)" T_Lut="78(78)"/>
+ <SubModule name="pwm" Register="27" Alu="3" Lut="29" T_Register="27(27)" T_Alu="3(3)" T_Lut="29(29)"/>
+ <SubModule name="bldc" Register="16" Lut="17" T_Register="16(16)" T_Lut="17(17)"/>
+ <SubModule name="i2c" Register="17" Lut="9" T_Register="90(17)" T_Lut="176(9)">
+  <SubModule name="i2c_core" Register="73" Lut="167" T_Register="73(73)" T_Lut="167(167)"/>
  </SubModule>
- <SubModule name="gpio" Register="32" Lut="29" T_Register="32(32)" T_Lut="29(29)"/>
+ <SubModule name="gpio" Register="32" Lut="30" T_Register="32(32)" T_Lut="30(30)"/>
  <SubModule name="memory" Register="1" Lut="1" T_Register="1(1)" T_Lut="1(1)" T_Bsram="4(0)">
   <SubModule name="gmem3" Bsram="1" T_Bsram="1(1)"/>
   <SubModule name="gmem2" Bsram="1" T_Bsram="1(1)"/>
@@ -18,8 +18,8 @@
   <SubModule name="gmem0" Bsram="1" T_Bsram="1(1)"/>
  </SubModule>
  <SubModule name="soc_leds" Register="5" Lut="4" T_Register="5(5)" T_Lut="4(4)"/>
- <SubModule name="cpu" Register="667" Alu="314" Lut="1834" Bsram="2" T_Register="936(667)" T_Alu="378(314)" T_Lut="2190(1834)" T_MULT36X36="1(0)" T_Bsram="2(2)">
+ <SubModule name="cpu" Register="667" Alu="314" Lut="1834" Bsram="2" T_Register="936(667)" T_Alu="378(314)" T_Lut="2191(1834)" T_MULT36X36="1(0)" T_Bsram="2(2)">
   <SubModule name="pcpi_mul" Register="69" Lut="4" MULT36X36="1" T_Register="69(69)" T_Lut="4(4)" T_MULT36X36="1(1)"/>
-  <SubModule name="pcpi_div" Register="200" Alu="64" Lut="352" T_Register="200(200)" T_Alu="64(64)" T_Lut="352(352)"/>
+  <SubModule name="pcpi_div" Register="200" Alu="64" Lut="353" T_Register="200(200)" T_Alu="64(64)" T_Lut="353(353)"/>
  </SubModule>
 </Module>

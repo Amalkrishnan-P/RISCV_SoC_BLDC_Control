@@ -83,7 +83,7 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 </tr>
 <tr>
 <td class="label">Created Time</td>
-<td>Tue Mar  3 14:29:04 2026
+<td>Tue Mar  3 14:39:39 2026
 </td>
 </tr>
 <tr>
@@ -97,24 +97,24 @@ table.detail_table th.label {  min-width: 8%; width: 8%; }
 <tr>
 <td class="label">Place & Route Process</td>
 <td>Running placement:
-   Placement Phase 0: CPU time = 0h 0m 0.885s, Elapsed time = 0h 0m 0.885s
-   Placement Phase 1: CPU time = 0h 0m 0.218s, Elapsed time = 0h 0m 0.218s
+   Placement Phase 0: CPU time = 0h 0m 0.858s, Elapsed time = 0h 0m 0.857s
+   Placement Phase 1: CPU time = 0h 0m 0.191s, Elapsed time = 0h 0m 0.192s
    Placement Phase 2: CPU time = 0h 0m 1s, Elapsed time = 0h 0m 1s
-   Placement Phase 3: CPU time = 0h 0m 1s, Elapsed time = 0h 0m 1s
-   Total Placement: CPU time = 0h 0m 4s, Elapsed time = 0h 0m 3s
+   Placement Phase 3: CPU time = 0h 0m 2s, Elapsed time = 0h 0m 2s
+   Total Placement: CPU time = 0h 0m 4s, Elapsed time = 0h 0m 4s
 Running routing:
    Routing Phase 0: CPU time = 0h 0m 0.002s, Elapsed time = 0h 0m 0.002s
-   Routing Phase 1: CPU time = 0h 0m 0.989s, Elapsed time = 0h 0m 0.989s
-   Routing Phase 2: CPU time = 0h 0m 3s, Elapsed time = 0h 0m 3s
+   Routing Phase 1: CPU time = 0h 0m 0.977s, Elapsed time = 0h 0m 0.977s
+   Routing Phase 2: CPU time = 0h 0m 2s, Elapsed time = 0h 0m 2s
    Routing Phase 3: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s
-   Total Routing: CPU time = 0h 0m 4s, Elapsed time = 0h 0m 4s
+   Total Routing: CPU time = 0h 0m 3s, Elapsed time = 0h 0m 3s
 Generate output files:
-   CPU time = 0h 0m 0.987s, Elapsed time = 0h 0m 0.987s
+   CPU time = 0h 0m 1s, Elapsed time = 0h 0m 1s
 </td>
 </tr>
 <tr>
 <td class="label">Total Time and Memory Usage</td>
-<td>CPU time = 0h 0m 8s, Elapsed time = 0h 0m 8s, Peak memory usage = 680MB</td>
+<td>CPU time = 0h 0m 8s, Elapsed time = 0h 0m 8s, Peak memory usage = 683MB</td>
 </tr>
 </table>
 <br/>
@@ -129,12 +129,12 @@ Generate output files:
 </tr>
 <tr>
 <td class="label">Logic</td>
-<td>3415/8640</td>
+<td>3432/8640</td>
 <td>40%</td>
 </tr>
 <tr>
 <td class="label">&nbsp &nbsp --LUT,ALU,ROM16</td>
-<td>3415(2881 LUT, 534 ALU, 0 ROM16)</td>
+<td>3432(2898 LUT, 534 ALU, 0 ROM16)</td>
 <td>-</td>
 </tr>
 <tr>
@@ -169,8 +169,8 @@ Generate output files:
 </tr>
 <tr>
 <td class="label">CLS</td>
-<td>2140/4320</td>
-<td>50%</td>
+<td>2107/4320</td>
+<td>49%</td>
 </tr>
 <tr>
 <td class="label">I/O Port</td>
@@ -284,7 +284,7 @@ Generate output files:
 <td> -</td>
 </tr>
 <tr>
-<td class="label">cpu/pcpi_mul/n299_5</td>
+<td class="label">cpu/pcpi_div/divisor_30_9</td>
 <td>LW</td>
 <td> -</td>
 </tr>
@@ -566,10 +566,10 @@ Generate output files:
 <tr>
 <td class="label">gate_signals[5]</td>
 <td>-</td>
-<td>85/3</td>
+<td>3/3</td>
 <td>N</td>
 <td>out</td>
-<td>IOT8[B]</td>
+<td>IOT2[A]</td>
 <td>-</td>
 <td>LVCMOS18</td>
 <td>8</td>
@@ -718,10 +718,10 @@ Generate output files:
 <tr>
 <td class="label">gpio_pin0</td>
 <td>-</td>
-<td>84/3</td>
+<td>85/3</td>
 <td>N</td>
 <td>io</td>
-<td>IOT10[A]</td>
+<td>IOT8[B]</td>
 <td>-</td>
 <td>LVCMOS18</td>
 <td>8</td>
@@ -890,18 +890,18 @@ Generate output files:
 </tr>
 <tr>
 <td class="label">3/3</td>
-<td>-</td>
-<td>in</td>
+<td>gate_signals[5]</td>
+<td>out</td>
 <td>IOT2[A]</td>
 <td>-</td>
 <td>LVCMOS18</td>
-<td>NA</td>
+<td>8</td>
 <td>UP</td>
-<td>ON</td>
-<td>NONE</td>
 <td>NA</td>
 <td>NA</td>
+<td>OFF</td>
 <td>NA</td>
+<td>OFF</td>
 <td>NA</td>
 <td>1.8</td>
 </tr>
@@ -958,26 +958,9 @@ Generate output files:
 </tr>
 <tr>
 <td class="label">85/3</td>
-<td>gate_signals[5]</td>
-<td>out</td>
-<td>IOT8[B]</td>
-<td>-</td>
-<td>LVCMOS18</td>
-<td>8</td>
-<td>UP</td>
-<td>NA</td>
-<td>NA</td>
-<td>OFF</td>
-<td>NA</td>
-<td>OFF</td>
-<td>NA</td>
-<td>1.8</td>
-</tr>
-<tr>
-<td class="label">84/3</td>
 <td>gpio_pin0</td>
 <td>io</td>
-<td>IOT10[A]</td>
+<td>IOT8[B]</td>
 <td>-</td>
 <td>LVCMOS18</td>
 <td>8</td>
@@ -987,6 +970,23 @@ Generate output files:
 <td>OFF</td>
 <td>NA</td>
 <td>OFF</td>
+<td>NA</td>
+<td>1.8</td>
+</tr>
+<tr>
+<td class="label">84/3</td>
+<td>-</td>
+<td>in</td>
+<td>IOT10[A]</td>
+<td>-</td>
+<td>LVCMOS18</td>
+<td>NA</td>
+<td>UP</td>
+<td>ON</td>
+<td>NONE</td>
+<td>NA</td>
+<td>NA</td>
+<td>NA</td>
 <td>NA</td>
 <td>1.8</td>
 </tr>

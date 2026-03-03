@@ -12,27 +12,27 @@
   <Part Number>: GW1NR-LV9QN88PC6/I5
   <Device>: GW1NR-9
   <Device Version>: C
-  <Created Time>:Tue Mar  3 14:29:04 2026
+  <Created Time>:Tue Mar  3 14:39:39 2026
 
 
 2. PnR Details
 
   Running placement:
-    Placement Phase 0: CPU time = 0h 0m 0.885s, Elapsed time = 0h 0m 0.885s
-    Placement Phase 1: CPU time = 0h 0m 0.218s, Elapsed time = 0h 0m 0.218s
+    Placement Phase 0: CPU time = 0h 0m 0.858s, Elapsed time = 0h 0m 0.857s
+    Placement Phase 1: CPU time = 0h 0m 0.191s, Elapsed time = 0h 0m 0.192s
     Placement Phase 2: CPU time = 0h 0m 1s, Elapsed time = 0h 0m 1s
-    Placement Phase 3: CPU time = 0h 0m 1s, Elapsed time = 0h 0m 1s
-    Total Placement: CPU time = 0h 0m 4s, Elapsed time = 0h 0m 3s
+    Placement Phase 3: CPU time = 0h 0m 2s, Elapsed time = 0h 0m 2s
+    Total Placement: CPU time = 0h 0m 4s, Elapsed time = 0h 0m 4s
  Running routing:
     Routing Phase 0: CPU time = 0h 0m 0.002s, Elapsed time = 0h 0m 0.002s
-    Routing Phase 1: CPU time = 0h 0m 0.989s, Elapsed time = 0h 0m 0.989s
-    Routing Phase 2: CPU time = 0h 0m 3s, Elapsed time = 0h 0m 3s
+    Routing Phase 1: CPU time = 0h 0m 0.977s, Elapsed time = 0h 0m 0.977s
+    Routing Phase 2: CPU time = 0h 0m 2s, Elapsed time = 0h 0m 2s
     Routing Phase 3: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s
-    Total Routing: CPU time = 0h 0m 4s, Elapsed time = 0h 0m 4s
+    Total Routing: CPU time = 0h 0m 3s, Elapsed time = 0h 0m 3s
  Generate output files:
-    CPU time = 0h 0m 0.987s, Elapsed time = 0h 0m 0.987s
+    CPU time = 0h 0m 1s, Elapsed time = 0h 0m 1s
 
- Total Time and Memory Usage: CPU time = 0h 0m 8s, Elapsed time = 0h 0m 8s, Peak memory usage = 680MB
+ Total Time and Memory Usage: CPU time = 0h 0m 8s, Elapsed time = 0h 0m 8s, Peak memory usage = 683MB
 
 
 3. Resource Usage Summary
@@ -40,15 +40,15 @@
   --------------------------------------------------------------------------------
   Resources                   | Usage                               | Utilization
   --------------------------------------------------------------------------------
-  Logic                       | 3415/8640                           |  40%
-    --LUT,ALU,ROM16           | 3415(2881 LUT, 534 ALU, 0 ROM16)    | -
+  Logic                       | 3432/8640                           |  40%
+    --LUT,ALU,ROM16           | 3432(2898 LUT, 534 ALU, 0 ROM16)    | -
     --SSRAM(RAM16)            | 0                                   | -
   Register                    | 1278/6693                           |  20%
     --Logic Register as Latch | 0/6480                              |  0%
     --Logic Register as FF    | 1265/6480                           |  20%
     --I/O Register as Latch   | 0/213                               |  0%
     --I/O Register as FF      | 13/213                              |  7%
-  CLS                         | 2140/4320                           |  50%
+  CLS                         | 2107/4320                           |  49%
   I/O Port                    | 29/71                               |  41%
   I/O Buf                     | 29                                  | -
     --Input Buf               | 6                                   | -
@@ -95,7 +95,7 @@
   n53_7          | LW             |  -
   cpu/n3613_3    | LW             |  -
   cpu/n7978_3    | LW             |  -
-  cpu/pcpi_mul/n299_5| LW             |  -
+  cpu/pcpi_div/divisor_30_9| LW             |  -
   cpu/pcpi_div/n1783_5| LW             |  -
   ===========================================
 
@@ -118,7 +118,7 @@ gate_signals[1]  | -         | 26/2          | Y          | out   | IOB8[B]  | -
 gate_signals[2]  | -         | 27/2          | Y          | out   | IOB11[A] | -               | LVCMOS33   | 8     | NONE      | NA        | NA         | OFF        | NA         | NA              | NA            | 3.3       
 gate_signals[3]  | -         | 28/2          | Y          | out   | IOB11[B] | -               | LVCMOS33   | 8     | NONE      | NA        | NA         | OFF        | NA         | NA              | NA            | 3.3       
 gate_signals[4]  | -         | 29/2          | Y          | out   | IOB13[A] | -               | LVCMOS33   | 8     | NONE      | NA        | NA         | OFF        | NA         | NA              | NA            | 3.3       
-gate_signals[5]  | -         | 85/3          | N          | out   | IOT8[B]  | -               | LVCMOS18   | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8       
+gate_signals[5]  | -         | 3/3           | N          | out   | IOT2[A]  | -               | LVCMOS18   | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8       
 scl              | -         | 30/2          | Y          | out   | IOB13[B] | -               | LVCMOS33   | 8     | UP        | NA        | NA         | ON         | NA         | NA              | NA            | 3.3       
 leds[0]          | -         | 10/3          | Y          | out   | IOL15[A] | GCLKT_6         | LVCMOS18   | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8       
 leds[1]          | -         | 11/3          | Y          | out   | IOL16[B] | -               | LVCMOS18   | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8       
@@ -126,7 +126,7 @@ leds[2]          | -         | 13/3          | Y          | out   | IOL21[B] | -
 leds[3]          | -         | 14/3          | Y          | out   | IOL22[B] | -               | LVCMOS18   | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8       
 leds[4]          | -         | 15/3          | Y          | out   | IOL25[B] | -               | LVCMOS18   | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8       
 sda              | -         | 33/2          | Y          | io    | IOB23[A] | -               | LVCMOS33   | 8     | UP        | NA        | NONE       | ON         | NA         | NA              | NA            | 3.3       
-gpio_pin0        | -         | 84/3          | N          | io    | IOT10[A] | -               | LVCMOS18   | 8     | UP        | NA        | NONE       | OFF        | NA         | OFF             | NA            | 1.8       
+gpio_pin0        | -         | 85/3          | N          | io    | IOT8[B]  | -               | LVCMOS18   | 8     | UP        | NA        | NONE       | OFF        | NA         | OFF             | NA            | 1.8       
 gpio_pin1        | -         | 32/2          | Y          | io    | IOB15[B] | -               | LVCMOS33   | 8     | UP        | NA        | NONE       | OFF        | NA         | NA              | NA            | 3.3       
 gpio_pin2        | -         | 42/2          | Y          | io    | IOB41[B] | -               | LVCMOS33   | 8     | UP        | NA        | NONE       | OFF        | NA         | NA              | NA            | 3.3       
 gpio_pin3        | -         | 41/2          | Y          | io    | IOB41[A] | -               | LVCMOS33   | 8     | UP        | NA        | NONE       | OFF        | NA         | NA              | NA            | 3.3       
@@ -144,12 +144,12 @@ gpio_pin7        | -         | 86/3          | Y          | io    | IOT8[A]  | -
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Loc./Bank| Signal           | Dir.  | Site     | CFG             | IO Type  | Drive | Pull Mode | PCI Clamp | Hysteresis | Open Drain | Vref       | Single Resistor | Diff Resistor | Bank Vccio
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-3/3      | -                | in    | IOT2[A]  | -               | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 1.8  
+3/3      | gate_signals[5]  | out   | IOT2[A]  | -               | LVCMOS18 | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8  
 88/3     | gpio_pin5        | io    | IOT5[A]  | MODE0           | LVCMOS18 | 8     | UP        | NA        | NONE       | OFF        | NA         | OFF             | NA            | 1.8  
 87/3     | gpio_pin6        | io    | IOT6[B]  | MODE1           | LVCMOS18 | 8     | UP        | NA        | NONE       | OFF        | NA         | OFF             | NA            | 1.8  
 86/3     | gpio_pin7        | io    | IOT8[A]  | -               | LVCMOS18 | 8     | UP        | NA        | NONE       | OFF        | NA         | OFF             | NA            | 1.8  
-85/3     | gate_signals[5]  | out   | IOT8[B]  | -               | LVCMOS18 | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8  
-84/3     | gpio_pin0        | io    | IOT10[A] | -               | LVCMOS18 | 8     | UP        | NA        | NONE       | OFF        | NA         | OFF             | NA            | 1.8  
+85/3     | gpio_pin0        | io    | IOT8[B]  | -               | LVCMOS18 | 8     | UP        | NA        | NONE       | OFF        | NA         | OFF             | NA            | 1.8  
+84/3     | -                | in    | IOT10[A] | -               | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 1.8  
 83/3     | -                | in    | IOT10[B] | -               | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 1.8  
 82/3     | -                | in    | IOT11[A] | -               | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 1.8  
 81/3     | hall_sensors[2]  | in    | IOT11[B] | -               | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA         | OFF             | NA            | 1.8  
