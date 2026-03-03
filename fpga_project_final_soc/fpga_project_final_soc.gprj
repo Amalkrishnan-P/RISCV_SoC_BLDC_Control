@@ -1,0 +1,26 @@
+<?xml version="1" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project>
+    <Template>FPGA</Template>
+    <Version>5</Version>
+    <Device name="GW1NR-9C" pn="GW1NR-LV9QN88PC6/I5">gw1nr9c-004</Device>
+    <FileList>
+        <File path="src/bldc_commutator.v" type="file.verilog" enable="1"/>
+        <File path="src/can_wrap.v" type="file.verilog" enable="1"/>
+        <File path="src/countdown_timer.v" type="file.verilog" enable="1"/>
+        <File path="src/gowin_sp.v" type="file.verilog" enable="1"/>
+        <File path="src/gpio.v" type="file.verilog" enable="1"/>
+        <File path="src/i2c_wrap.v" type="file.verilog" enable="1"/>
+        <File path="src/leds.v" type="file.verilog" enable="1"/>
+        <File path="src/mem_init.v" type="file.verilog" enable="1"/>
+        <File path="src/picorv32.v" type="file.verilog" enable="1"/>
+        <File path="src/pwm_generator.v" type="file.verilog" enable="1"/>
+        <File path="src/reset.v" type="file.verilog" enable="1"/>
+        <File path="src/simpleuart.v" type="file.verilog" enable="1"/>
+        <File path="src/sram.v" type="file.verilog" enable="1"/>
+        <File path="src/top.v" type="file.verilog" enable="1"/>
+        <File path="src/uart_wrap.v" type="file.verilog" enable="1"/>
+        <File path="src/picorv32.cst" type="file.cst" enable="1"/>
+        <File path="src/picorv32.sdc" type="file.sdc" enable="1"/>
+    </FileList>
+</Project>

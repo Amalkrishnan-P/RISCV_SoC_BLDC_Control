@@ -1,0 +1,73 @@
+{
+ "Device" : "GW1NR-9C",
+ "Files" : [
+  {
+   "Path" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/bldc_commutator.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/can_wrap.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/countdown_timer.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/gowin_sp.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/gpio.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/i2c_wrap.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/leds.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/picorv32.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/pwm_generator.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/reset.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/simpleuart.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/sram.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/top.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/uart_wrap.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/mem_init.v",
+   "Type" : "verilog"
+  }
+ ],
+ "IncludePath" : [
+
+ ],
+ "LoopLimit" : 2000,
+ "ResultFile" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/impl/temp/rtl_parser.result",
+ "Top" : "",
+ "VerilogStd" : "verilog_2001",
+ "VhdlStd" : "vhdl_93"
+}

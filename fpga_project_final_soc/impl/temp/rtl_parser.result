@@ -1,0 +1,234 @@
+[
+ {
+  "InstFile" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/can_wrap.v",
+  "InstLine" : 52,
+  "InstName" : "can_wrap",
+  "ModuleFile" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/can_wrap.v",
+  "ModuleLine" : 52,
+  "ModuleName" : "can_wrap",
+  "SubInsts" : [
+   {
+    "InstFile" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/can_wrap.v",
+    "InstLine" : 183,
+    "InstName" : "can_core",
+    "ModuleFile" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/can_wrap.v",
+    "ModuleLine" : 207,
+    "ModuleName" : "can_controller"
+   }
+  ]
+ },
+ {
+  "InstFile" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/picorv32.v",
+  "InstLine" : 2174,
+  "InstName" : "picorv32_regs",
+  "ModuleFile" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/picorv32.v",
+  "ModuleLine" : 2174,
+  "ModuleName" : "picorv32_regs"
+ },
+ {
+  "InstFile" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/picorv32.v",
+  "InstLine" : 2517,
+  "InstName" : "picorv32_axi",
+  "ModuleFile" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/picorv32.v",
+  "ModuleLine" : 2517,
+  "ModuleName" : "picorv32_axi",
+  "SubInsts" : [
+   {
+    "InstFile" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/picorv32.v",
+    "InstLine" : 2619,
+    "InstName" : "axi_adapter",
+    "ModuleFile" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/picorv32.v",
+    "ModuleLine" : 2731,
+    "ModuleName" : "picorv32_axi_adapter"
+   },
+   {
+    "InstFile" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/picorv32.v",
+    "InstLine" : 2674,
+    "InstName" : "picorv32_core",
+    "ModuleFile" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/picorv32.v",
+    "ModuleLine" : 62,
+    "ModuleName" : "picorv32"
+   }
+  ]
+ },
+ {
+  "InstFile" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/picorv32.v",
+  "InstLine" : 2815,
+  "InstName" : "picorv32_wb",
+  "ModuleFile" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/picorv32.v",
+  "ModuleLine" : 2815,
+  "ModuleName" : "picorv32_wb",
+  "SubInsts" : [
+   {
+    "InstFile" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/picorv32.v",
+    "InstLine" : 2938,
+    "InstName" : "picorv32_core",
+    "ModuleFile" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/picorv32.v",
+    "ModuleLine" : 62,
+    "ModuleName" : "picorv32"
+   }
+  ]
+ },
+ {
+  "InstFile" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/top.v",
+  "InstLine" : 16,
+  "InstName" : "top",
+  "ModuleFile" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/top.v",
+  "ModuleLine" : 16,
+  "ModuleName" : "top",
+  "SubInsts" : [
+   {
+    "InstFile" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/top.v",
+    "InstLine" : 119,
+    "InstName" : "reset_controller",
+    "ModuleFile" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/reset.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "reset_control"
+   },
+   {
+    "InstFile" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/top.v",
+    "InstLine" : 126,
+    "InstName" : "uart",
+    "ModuleFile" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/uart_wrap.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "uart_wrap",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/uart_wrap.v",
+      "InstLine" : 27,
+      "InstName" : "uart",
+      "ModuleFile" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/simpleuart.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "simpleuart"
+     }
+    ]
+   },
+   {
+    "InstFile" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/top.v",
+    "InstLine" : 140,
+    "InstName" : "cdt",
+    "ModuleFile" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/countdown_timer.v",
+    "ModuleLine" : 10,
+    "ModuleName" : "countdown_timer"
+   },
+   {
+    "InstFile" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/top.v",
+    "InstLine" : 151,
+    "InstName" : "pwm",
+    "ModuleFile" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/pwm_generator.v",
+    "ModuleLine" : 9,
+    "ModuleName" : "pwm_generator"
+   },
+   {
+    "InstFile" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/top.v",
+    "InstLine" : 163,
+    "InstName" : "bldc",
+    "ModuleFile" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/bldc_commutator.v",
+    "ModuleLine" : 17,
+    "ModuleName" : "bldc_commutator"
+   },
+   {
+    "InstFile" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/top.v",
+    "InstLine" : 177,
+    "InstName" : "i2c",
+    "ModuleFile" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/i2c_wrap.v",
+    "ModuleLine" : 23,
+    "ModuleName" : "i2c_wrap",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/i2c_wrap.v",
+      "InstLine" : 98,
+      "InstName" : "i2c_core",
+      "ModuleFile" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/i2c_wrap.v",
+      "ModuleLine" : 119,
+      "ModuleName" : "i2c_master_test"
+     }
+    ]
+   },
+   {
+    "InstFile" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/top.v",
+    "InstLine" : 191,
+    "InstName" : "gpio",
+    "ModuleFile" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/gpio.v",
+    "ModuleLine" : 27,
+    "ModuleName" : "gpio_8pin"
+   },
+   {
+    "InstFile" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/top.v",
+    "InstLine" : 213,
+    "InstName" : "memory",
+    "ModuleFile" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/sram.v",
+    "ModuleLine" : 3,
+    "ModuleName" : "sram",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/sram.v",
+      "InstLine" : 88,
+      "InstName" : "gmem3",
+      "ModuleFile" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/gowin_sp.v",
+      "ModuleLine" : 10,
+      "ModuleName" : "Gowin_SP"
+     },
+     {
+      "InstFile" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/sram.v",
+      "InstLine" : 166,
+      "InstName" : "gmem2",
+      "ModuleFile" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/gowin_sp.v",
+      "ModuleLine" : 10,
+      "ModuleName" : "Gowin_SP"
+     },
+     {
+      "InstFile" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/sram.v",
+      "InstLine" : 244,
+      "InstName" : "gmem1",
+      "ModuleFile" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/gowin_sp.v",
+      "ModuleLine" : 10,
+      "ModuleName" : "Gowin_SP"
+     },
+     {
+      "InstFile" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/sram.v",
+      "InstLine" : 322,
+      "InstName" : "gmem0",
+      "ModuleFile" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/gowin_sp.v",
+      "ModuleLine" : 10,
+      "ModuleName" : "Gowin_SP"
+     }
+    ]
+   },
+   {
+    "InstFile" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/top.v",
+    "InstLine" : 225,
+    "InstName" : "soc_leds",
+    "ModuleFile" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/leds.v",
+    "ModuleLine" : 6,
+    "ModuleName" : "test_leds"
+   },
+   {
+    "InstFile" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/top.v",
+    "InstLine" : 248,
+    "InstName" : "cpu",
+    "ModuleFile" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/picorv32.v",
+    "ModuleLine" : 62,
+    "ModuleName" : "picorv32",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/picorv32.v",
+      "InstLine" : 273,
+      "InstName" : "pcpi_mul",
+      "ModuleFile" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/picorv32.v",
+      "ModuleLine" : 2318,
+      "ModuleName" : "picorv32_pcpi_fast_mul"
+     },
+     {
+      "InstFile" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/picorv32.v",
+      "InstLine" : 306,
+      "InstName" : "pcpi_div",
+      "ModuleFile" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/picorv32.v",
+      "ModuleLine" : 2420,
+      "ModuleName" : "picorv32_pcpi_div"
+     }
+    ]
+   }
+  ]
+ }
+]

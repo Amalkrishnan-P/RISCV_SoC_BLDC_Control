@@ -1,0 +1,199 @@
+================================================================================
+FPGA Pin Assignment Details
+RISC-V SoC for BLDC Motor Control
+================================================================================
+
+PROJECT OVERVIEW:
+- FPGA Board: Gowin
+- Application: BLDC Motor Controller
+- Interfaces: UART, I2C, Hall Sensors, Gate Drivers, GPIOs
+
+================================================================================
+PIN ALLOCATION SUMMARY
+================================================================================
+
+┌────────────────────────────────────────────────────────────────────────────┐
+│ POWER AND CLOCK                                                            │
+├──────────────────┬──────────┬──────────┬─────────────┬─────────────────────┤
+│ Signal Name      │ Pin No.  │ Voltage  │ Direction   │ Description         │
+├──────────────────┼──────────┼──────────┼─────────────┼─────────────────────┤
+│ clk              │ 52       │ 3.3V     │ Input       │ 27MHz System Clock  │
+│ reset_button_n   │ 4        │ 1.8V     │ Input       │ Active-Low Reset    │
+└──────────────────┴──────────┴──────────┴─────────────┴─────────────────────┘
+
+┌────────────────────────────────────────────────────────────────────────────┐
+│ UART INTERFACE                                                             │
+├──────────────────┬──────────┬──────────┬─────────────┬─────────────────────┤
+│ Signal Name      │ Pin No.  │ Voltage  │ Direction   │ Description         │
+├──────────────────┼──────────┼──────────┼─────────────┼─────────────────────┤
+│ uart_tx          │ 17       │ 3.3V     │ Output      │ UART Transmit       │
+│ uart_rx          │ 18       │ 3.3V     │ Input       │ UART Receive        │
+└──────────────────┴──────────┴──────────┴─────────────┴─────────────────────┘
+
+┌────────────────────────────────────────────────────────────────────────────┐
+│ HALL SENSORS (3-bit input)                                                 │
+├──────────────────┬──────────┬──────────┬─────────────┬─────────────────────┤
+│ Signal Name      │ Pin No.  │ Voltage  │ Direction   │ Description         │
+├──────────────────┼──────────┼──────────┼─────────────┼─────────────────────┤
+│ hall_sensors[0]  │ 79       │ 1.8V     │ Input       │ Hall Sensor A       │
+│ hall_sensors[1]  │ 80       │ 1.8V     │ Input       │ Hall Sensor B       │
+│ hall_sensors[2]  │ 81       │ 1.8V     │ Input       │ Hall Sensor C       │
+└──────────────────┴──────────┴──────────┴─────────────┴─────────────────────┘
+Note: Hall sensors have internal pull-up resistors enabled
+
+┌────────────────────────────────────────────────────────────────────────────┐
+│ BLDC GATE DRIVER SIGNALS (6-bit output)                                    │
+├──────────────────┬──────────┬──────────┬─────────────┬─────────────────────┤
+│ Signal Name      │ Pin No.  │ Voltage  │ Direction   │ Description         │
+├──────────────────┼──────────┼──────────┼─────────────┼─────────────────────┤
+│ gate_signals[0]  │ 25       │ 3.3V     │ Output      │ Gate Driver 1 (G1)  │
+│ gate_signals[1]  │ 26       │ 3.3V     │ Output      │ Gate Driver 2 (G2)  │
+│ gate_signals[2]  │ 27       │ 3.3V     │ Output      │ Gate Driver 3 (G3)  │
+│ gate_signals[3]  │ 28       │ 3.3V     │ Output      │ Gate Driver 4 (G4)  │
+│ gate_signals[4]  │ 29       │ 3.3V     │ Output      │ Gate Driver 5 (G5)  │
+│ gate_signals[5]  │ 30       │ 3.3V     │ Output      │ Gate Driver 6 (G6)  │
+└──────────────────┴──────────┴──────────┴─────────────┴─────────────────────┘
+Note: Drive strength set to 8mA for all gate signals
+
+┌────────────────────────────────────────────────────────────────────────────┐
+│ I2C INTERFACE                                                              │
+├──────────────────┬──────────┬──────────┬─────────────┬─────────────────────┤
+│ Signal Name      │ Pin No.  │ Voltage  │ Direction   │ Description         │
+├──────────────────┼──────────┼──────────┼─────────────┼─────────────────────┤
+│ sda              │ 82       │ 1.8V     │ Bidirect.   │ I2C Data Line       │
+│ scl              │ 83       │ 1.8V     │ Output      │ I2C Clock Line      │
+└──────────────────┴──────────┴──────────┴─────────────┴─────────────────────┘
+Note: SDA configured as open-drain with pull-up
+      SCL has pull-up resistor enabled
+
+┌────────────────────────────────────────────────────────────────────────────┐
+│ STATUS LEDs (5-bit output)                                                 │
+├──────────────────┬──────────┬──────────┬─────────────┬─────────────────────┤
+│ Signal Name      │ Pin No.  │ Voltage  │ Direction   │ Description         │
+├──────────────────┼──────────┼──────────┼─────────────┼─────────────────────┤
+│ leds[0]          │ 10       │ 1.8V     │ Output      │ Status LED 0        │
+│ leds[1]          │ 11       │ 1.8V     │ Output      │ Status LED 1        │
+│ leds[2]          │ 13       │ 1.8V     │ Output      │ Status LED 2        │
+│ leds[3]          │ 14       │ 1.8V     │ Output      │ Status LED 3        │
+│ leds[4]          │ 15       │ 1.8V     │ Output      │ Status LED 4        │
+└──────────────────┴──────────┴──────────┴─────────────┴─────────────────────┘
+Note: LEDs are active-high with 8mA drive strength, for now just to check
+core working
+
+================================================================================
+VOLTAGE BANK ALLOCATION
+================================================================================
+
+1.8V BANK PINS USED:
+  - Pin 4:  reset_button_n
+  - Pin 10: leds[0]
+  - Pin 11: leds[1]
+  - Pin 13: leds[2]
+  - Pin 14: leds[3]
+  - Pin 15: leds[4]
+  - Pin 16: leds[5]
+  - Pin 79: hall_sensors[0]
+  - Pin 80: hall_sensors[1]
+  - Pin 81: hall_sensors[2]
+  - Pin 82: sda (I2C)
+  - Pin 83: scl (I2C)
+
+
+1.8V BANK PINS AVAILABLE FOR FUTURE USE:
+  - Pin 86: SPARE
+  - Pin 87: SPARE
+  - Pin 88: SPARE
+  - Pin 84: can_rx
+  - Pin 85: can_tx
+
+3.3V BANK PINS USED:
+  - Pin 17: uart_tx
+  - Pin 18: uart_rx
+  - Pin 25: gate_signals[0]
+  - Pin 26: gate_signals[1]
+  - Pin 27: gate_signals[2]
+  - Pin 28: gate_signals[3]
+  - Pin 29: gate_signals[4]
+  - Pin 30: gate_signals[5]
+  - Pin 52: clk (27MHz oscillator)
+
+3.3V BANK PINS AVAILABLE:
+  - None 
+
+================================================================================
+ELECTRICAL CHARACTERISTICS
+================================================================================
+
+OUTPUT DRIVE STRENGTH: 8mA (standard for most signals)
+INPUT PULL MODE:
+  - Pull-up enabled for: reset_button_n, hall_sensors, I2C lines, can_rx, leds
+  - No pull for: clk, uart_rx, uart_tx, gate_signals
+
+I/O STANDARDS:
+  - 1.8V signals: BANK_VCCIO=1.8
+  - 3.3V signals: IO_TYPE=LVCMOS33, BANK_VCCIO=3.3
+
+SPECIAL CONFIGURATIONS:
+  - SDA: OPEN_DRAIN=ON (required for I2C bidirectional communication)
+  - All signals: PCI_CLAMP=OFF where specified
+
+================================================================================
+BLDC MOTOR CONTROL MAPPING
+================================================================================
+
+Gate Driver Connection (typical 3-phase BLDC):
+  Phase A High-Side: gate_signals[0] (G1)
+  Phase A Low-Side:  gate_signals[1] (G2)
+  Phase B High-Side: gate_signals[2] (G3)
+  Phase B Low-Side:  gate_signals[3] (G4)
+  Phase C High-Side: gate_signals[4] (G5)
+  Phase C Low-Side:  gate_signals[5] (G6)
+
+Hall Sensor States (typical sequence):
+  State 1: hall_sensors = 3'b001
+  State 2: hall_sensors = 3'b011
+  State 3: hall_sensors = 3'b010
+  State 4: hall_sensors = 3'b110
+  State 5: hall_sensors = 3'b100
+  State 6: hall_sensors = 3'b101
+
+================================================================================
+INTERFACE REQUIREMENTS
+================================================================================
+
+I2C INTERFACE:
+  - External pull-up resistors : 4.7kΩ on both SDA and SCL
+  - Max clock frequency: 400kHz (Fast Mode) or 100kHz (Standard Mode)
+  - Voltage level: 1.8V
+
+CAN BUS INTERFACE:(issues)
+  - Requires external CAN transceiver MCP2551, SN65HVD230, TJA1050
+  - Transceiver should match FPGA voltage level (1.8V logic side)
+  - CAN bus requires 120Ω termination resistors at both ends
+
+GATE DRIVERS:
+  - External gate driver IC required e.g., IR2104, IR2110, DRV8302
+  - Voltage level: 3.3V compatible
+  - Ensure proper dead-time to prevent shoot-through
+
+HALL SENSORS:
+  - Direct connection if 1.8V output
+  - Use level shifter if sensors output 3.3V or 5V
+  - Sensors should have open-collector or open-drain outputs
+
+================================================================================
+REVISION HISTORY
+================================================================================
+
+Version 1.0 - Initial pin assignment
+  - Allocated Hall sensors to pins 79-81
+  - Allocated Gate signals to pins 25-30
+  - Allocated I2C to pins 82-83
+  - Allocated CAN to pins 84-85
+  - Reserved pins 86-88 for future expansion
+
+================================================================================
+END OF DOCUMENT
+================================================================================
+
+ 

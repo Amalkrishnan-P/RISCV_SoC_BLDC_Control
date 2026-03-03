@@ -1,0 +1,29 @@
+Reading netlist file: "C:\users\amal\Documents\RISCV_SoC_BLDC\fpga_project_final_soc\impl\gwsynthesis\fpga_project_final_soc.vg"
+Parsing netlist file "C:\users\amal\Documents\RISCV_SoC_BLDC\fpga_project_final_soc\impl\gwsynthesis\fpga_project_final_soc.vg" completed
+Processing netlist completed
+Reading constraint file: "C:\users\amal\Documents\RISCV_SoC_BLDC\fpga_project_final_soc\src\picorv32.cst"
+Physical Constraint parsed completed
+Running placement......
+[10%] Placement Phase 0 completed
+[20%] Placement Phase 1 completed
+[30%] Placement Phase 2 completed
+[50%] Placement Phase 3 completed
+Running routing......
+[60%] Routing Phase 0 completed
+[70%] Routing Phase 1 completed
+[80%] Routing Phase 2 completed
+[90%] Routing Phase 3 completed
+Running timing analysis......
+[95%] Timing analysis completed
+Placement and routing completed
+Bitstream generation in progress......
+Bitstream generation completed
+Running power analysis......
+[100%] Power analysis completed
+Generate file "C:\users\amal\Documents\RISCV_SoC_BLDC\fpga_project_final_soc\impl\pnr\fpga_project_final_soc.power.html" completed
+Generate file "C:\users\amal\Documents\RISCV_SoC_BLDC\fpga_project_final_soc\impl\pnr\fpga_project_final_soc.pin.html" completed
+Generate file "C:\users\amal\Documents\RISCV_SoC_BLDC\fpga_project_final_soc\impl\pnr\fpga_project_final_soc.rpt.html" completed
+Generate file "C:\users\amal\Documents\RISCV_SoC_BLDC\fpga_project_final_soc\impl\pnr\fpga_project_final_soc.rpt.txt" completed
+Generate file "C:\users\amal\Documents\RISCV_SoC_BLDC\fpga_project_final_soc\impl\pnr\fpga_project_final_soc.tr.html" completed
+Tue Mar  3 12:09:19 2026
+
