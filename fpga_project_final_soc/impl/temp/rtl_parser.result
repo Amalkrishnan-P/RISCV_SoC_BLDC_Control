@@ -132,15 +132,15 @@
     "InstLine" : 177,
     "InstName" : "i2c",
     "ModuleFile" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/i2c_wrap.v",
-    "ModuleLine" : 23,
+    "ModuleLine" : 22,
     "ModuleName" : "i2c_wrap",
     "SubInsts" : [
      {
       "InstFile" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/i2c_wrap.v",
-      "InstLine" : 98,
+      "InstLine" : 97,
       "InstName" : "i2c_core",
       "ModuleFile" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/i2c_wrap.v",
-      "ModuleLine" : 119,
+      "ModuleLine" : 118,
       "ModuleName" : "i2c_master_test"
      }
     ]

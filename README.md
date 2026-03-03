@@ -12,8 +12,11 @@ Main working directories:
 RISCV_SoC/
 
 ├── code/                  # RISC-V software (main.c, Makefile, etc.)
+
 ├── fpga/                  # FPGA Verilog sources
+
 ├── fpga_test_1/           # FPGA test designs
+
 └── openFPGALoader/        # openFPGALoader build directory
 
 -----------------------------------------------------------------------

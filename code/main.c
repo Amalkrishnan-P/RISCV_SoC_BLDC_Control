@@ -313,9 +313,9 @@ void i2c_interactive_test(void)
 
     uart_puts("\r\n=== Interactive I2C Test ===\r\n");
     uart_puts("Commands:\r\n");
-    uart_puts("  '1' = Write 0xAA to 0x50\r\n");
-    uart_puts("  '2' = Write 0x55 to 0x50\r\n");
-    uart_puts("  '3' = Write 0xFF to 0x3C\r\n");
+    uart_puts("  '1' = READ from 0x1A \r\n");
+    uart_puts("  '2' = Write 0x55 to 0x10\r\n");
+    uart_puts("  '3' = Write 0xFF to 0x1C\r\n");
     uart_puts("  's' = Show status\r\n");
     uart_puts("  'q' = Quit\r\n\r\n");
 
@@ -327,19 +327,15 @@ void i2c_interactive_test(void)
 
         switch(ch) {
             case '1':
-                uart_puts("Writing 0xAA to 0x51...\r\n");
-                i2c_write_byte(0xAA,0xAA);
-                i2c_print_status();
+                uart_puts("Reading form 0x1A...\r\n");
+                i2c_read_byte(0x1A);
                 i2c_wait_done();
-                // i2c_read_byte((unsigned char)slave_addr)
-                // cdt_delay(5700000);
-                uart_print_hex((unsigned int)i2c_get_status);
                 i2c_print_status();
                 break;
 
             case '2':
-                uart_puts("Writing 0x55 to 0x50...\r\n");
-                i2c_write_byte(0x50, 0x55);
+                uart_puts("Writing 0x55 to 0x10...\r\n");
+                i2c_write_byte(0x10, 0x55);
                 uart_print_hex((unsigned int)i2c_get_status);
                 uart_puts("...\r\n");
                 cdt_delay(5700000);
@@ -349,8 +345,8 @@ void i2c_interactive_test(void)
                 break;
 
             case '3':
-                uart_puts("Writing 0xFF to 0x3C...\r\n");
-                i2c_write_byte(0x3C, 0xFF);
+                uart_puts("Writing 0xFF to 0x1C...\r\n");
+                i2c_write_byte(0x1C, 0xFF);
                 cdt_delay(5700000);
                 i2c_print_status();
                 break;

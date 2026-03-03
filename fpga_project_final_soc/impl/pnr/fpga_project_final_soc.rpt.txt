@@ -12,27 +12,27 @@
   <Part Number>: GW1NR-LV9QN88PC6/I5
   <Device>: GW1NR-9
   <Device Version>: C
-  <Created Time>:Tue Mar  3 12:09:19 2026
+  <Created Time>:Tue Mar  3 14:29:04 2026
 
 
 2. PnR Details
 
   Running placement:
-    Placement Phase 0: CPU time = 0h 0m 0.976s, Elapsed time = 0h 0m 0.977s
-    Placement Phase 1: CPU time = 0h 0m 0.228s, Elapsed time = 0h 0m 0.228s
+    Placement Phase 0: CPU time = 0h 0m 0.885s, Elapsed time = 0h 0m 0.885s
+    Placement Phase 1: CPU time = 0h 0m 0.218s, Elapsed time = 0h 0m 0.218s
     Placement Phase 2: CPU time = 0h 0m 1s, Elapsed time = 0h 0m 1s
-    Placement Phase 3: CPU time = 0h 0m 2s, Elapsed time = 0h 0m 2s
-    Total Placement: CPU time = 0h 0m 4s, Elapsed time = 0h 0m 4s
+    Placement Phase 3: CPU time = 0h 0m 1s, Elapsed time = 0h 0m 1s
+    Total Placement: CPU time = 0h 0m 4s, Elapsed time = 0h 0m 3s
  Running routing:
-    Routing Phase 0: CPU time = 0h 0m 0.001s, Elapsed time = 0h 0m 0.002s
-    Routing Phase 1: CPU time = 0h 0m 1s, Elapsed time = 0h 0m 1s
-    Routing Phase 2: CPU time = 0h 0m 2s, Elapsed time = 0h 0m 2s
+    Routing Phase 0: CPU time = 0h 0m 0.002s, Elapsed time = 0h 0m 0.002s
+    Routing Phase 1: CPU time = 0h 0m 0.989s, Elapsed time = 0h 0m 0.989s
+    Routing Phase 2: CPU time = 0h 0m 3s, Elapsed time = 0h 0m 3s
     Routing Phase 3: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s
     Total Routing: CPU time = 0h 0m 4s, Elapsed time = 0h 0m 4s
  Generate output files:
-    CPU time = 0h 0m 1s, Elapsed time = 0h 0m 1s
+    CPU time = 0h 0m 0.987s, Elapsed time = 0h 0m 0.987s
 
- Total Time and Memory Usage: CPU time = 0h 0m 9s, Elapsed time = 0h 0m 9s, Peak memory usage = 669MB
+ Total Time and Memory Usage: CPU time = 0h 0m 8s, Elapsed time = 0h 0m 8s, Peak memory usage = 680MB
 
 
 3. Resource Usage Summary
@@ -40,20 +40,20 @@
   --------------------------------------------------------------------------------
   Resources                   | Usage                               | Utilization
   --------------------------------------------------------------------------------
-  Logic                       | 3385/8640                           |  40%
-    --LUT,ALU,ROM16           | 3385(2851 LUT, 534 ALU, 0 ROM16)    | -
+  Logic                       | 3415/8640                           |  40%
+    --LUT,ALU,ROM16           | 3415(2881 LUT, 534 ALU, 0 ROM16)    | -
     --SSRAM(RAM16)            | 0                                   | -
-  Register                    | 1267/6693                           |  19%
+  Register                    | 1278/6693                           |  20%
     --Logic Register as Latch | 0/6480                              |  0%
-    --Logic Register as FF    | 1254/6480                           |  20%
+    --Logic Register as FF    | 1265/6480                           |  20%
     --I/O Register as Latch   | 0/213                               |  0%
     --I/O Register as FF      | 13/213                              |  7%
-  CLS                         | 2085/4320                           |  49%
+  CLS                         | 2140/4320                           |  50%
   I/O Port                    | 29/71                               |  41%
   I/O Buf                     | 29                                  | -
     --Input Buf               | 6                                   | -
-    --Output Buf              | 15                                  | -
-    --Inout Buf               | 8                                   | -
+    --Output Buf              | 14                                  | -
+    --Inout Buf               | 9                                   | -
   BSRAM                       | 6/26                                | 24%
     --SP                      | 4
     --SDPB                    | 2
@@ -95,7 +95,7 @@
   n53_7          | LW             |  -
   cpu/n3613_3    | LW             |  -
   cpu/n7978_3    | LW             |  -
-  cpu/pcpi_div/divisor_30_9| LW             |  -
+  cpu/pcpi_mul/n299_5| LW             |  -
   cpu/pcpi_div/n1783_5| LW             |  -
   ===========================================
 
@@ -125,7 +125,7 @@ leds[1]          | -         | 11/3          | Y          | out   | IOL16[B] | -
 leds[2]          | -         | 13/3          | Y          | out   | IOL21[B] | -               | LVCMOS18   | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8       
 leds[3]          | -         | 14/3          | Y          | out   | IOL22[B] | -               | LVCMOS18   | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8       
 leds[4]          | -         | 15/3          | Y          | out   | IOL25[B] | -               | LVCMOS18   | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8       
-sda              | -         | 33/2          | Y          | io    | IOB23[A] | -               | LVCMOS33   | 8     | UP        | NA        | NA         | ON         | NA         | NA              | NA            | 3.3       
+sda              | -         | 33/2          | Y          | io    | IOB23[A] | -               | LVCMOS33   | 8     | UP        | NA        | NONE       | ON         | NA         | NA              | NA            | 3.3       
 gpio_pin0        | -         | 84/3          | N          | io    | IOT10[A] | -               | LVCMOS18   | 8     | UP        | NA        | NONE       | OFF        | NA         | OFF             | NA            | 1.8       
 gpio_pin1        | -         | 32/2          | Y          | io    | IOB15[B] | -               | LVCMOS33   | 8     | UP        | NA        | NONE       | OFF        | NA         | NA              | NA            | 3.3       
 gpio_pin2        | -         | 42/2          | Y          | io    | IOB41[B] | -               | LVCMOS33   | 8     | UP        | NA        | NONE       | OFF        | NA         | NA              | NA            | 3.3       
@@ -178,7 +178,7 @@ Loc./Bank| Signal           | Dir.  | Site     | CFG             | IO Type  | Dr
 30/2     | scl              | out   | IOB13[B] | -               | LVCMOS33 | 8     | UP        | NA        | NA         | ON         | NA         | NA              | NA            | 3.3  
 31/2     | -                | in    | IOB15[A] | -               | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 3.3  
 32/2     | gpio_pin1        | io    | IOB15[B] | -               | LVCMOS33 | 8     | UP        | NA        | NONE       | OFF        | NA         | NA              | NA            | 3.3  
-33/2     | sda              | out   | IOB23[A] | -               | LVCMOS33 | 8     | UP        | NA        | NA         | ON         | NA         | NA              | NA            | 3.3  
+33/2     | sda              | io    | IOB23[A] | -               | LVCMOS33 | 8     | UP        | NA        | NONE       | ON         | NA         | NA              | NA            | 3.3  
 34/2     | -                | in    | IOB23[B] | -               | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 3.3  
 35/2     | -                | in    | IOB29[A] | GCLKT_4         | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 3.3  
 36/2     | -                | in    | IOB29[B] | GCLKC_4         | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 3.3  
