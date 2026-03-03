@@ -5,7 +5,6 @@ This directory contains a simple RISC-V System-on-Chip (SoC) intended for
 BLDC control applications, implemented on an FPGA for testing purposes.
 
 -----------------------------------------------------------------------
-
 Repository Location 
 ----------------------------------------------------------------------
 Main working directories:
@@ -13,14 +12,11 @@ Main working directories:
 RISCV_SoC/
 
 ├── code/                  # RISC-V software (main.c, Makefile, etc.)
-
 ├── fpga/                  # FPGA Verilog sources
-
 ├── fpga_test_1/           # FPGA test designs
-
 └── openFPGALoader/        # openFPGALoader build directory
------------------------------------------------------------------------
 
+-----------------------------------------------------------------------
 FPGA Programming Commands 
 ----------------------------------------
 
@@ -29,7 +25,6 @@ Flash FPGA with bitstream:
 ./openFPGALoader -b tangnano9k -m $1 ../fpga_test_1/impl/pnr/fpga_test_1.fs
 
 -----------------------------------------------------------------------
-
 Serial Console
 --------------
 
@@ -38,7 +33,6 @@ screen /dev/ttyUSB0 115200
 Used for UART output from the SoC.
 
 -----------------------------------------------------------------------
-
 Build Environment Limitations
 -----------------------------
 
@@ -52,7 +46,6 @@ The build environment is limited:
 - Bare-metal execution only
 
 -----------------------------------------------------------------------
-
 Toolchain Requirements
 ----------------------
 
@@ -63,7 +56,6 @@ On Ubuntu 22.04:
 sudo apt install gcc-riscv64-unknown-elf 
 
 -----------------------------------------------------------------------
-
 Software Build Flow
 -------------------
 
@@ -85,7 +77,6 @@ NOTE:
 Every software change requires rebuilding and reloading the FPGA.
 
 -----------------------------------------------------------------------
-
 Memory Initialization
 ---------------------
 
@@ -96,7 +87,6 @@ Program: conv_to_init
 - Used to initialize SRAM contents in the FPGA design
 
 -----------------------------------------------------------------------
-
 Debugging and Inspection
 ------------------------
 
@@ -113,7 +103,6 @@ Show symbols sorted by address:
 riscv64-unknown-elf-nm --numeric-sort prog.elf
 
 -----------------------------------------------------------------------
-
 Notes and Warnings
 ------------------
 
