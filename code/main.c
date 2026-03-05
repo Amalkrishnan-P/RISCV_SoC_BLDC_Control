@@ -11,7 +11,7 @@
 #include "gpio.h"
 
 #define ENABLE_BLDC
-// #define ENABLE_GPIO
+#define ENABLE_GPIO
 #define ENABLE_PWM
 #define ENABLE_I2C
 
@@ -105,10 +105,15 @@ while(1)
   char gpio_cmd;
   unsigned char pin, val;
   
-  uart_puts("\r\n--- GPIO Control ---\r\n");
-  uart_puts("Commands: s=status, o=set output, i=set input,\r\n");
-  uart_puts("          h=set high, l=set low, t=toggle, r=read,\r\n");
-  uart_puts("          p=pattern test, a=all high, z=all low\r\n");
+  uart_puts("\r\n===   GPIO Control  ===\r\n");
+  uart_puts("Commands:\r\n");
+  uart_puts("  s: Show status\r\n");
+  uart_puts("  i: Set pin as input\r\n");
+  // uart_puts("  h: Set high\r\n");
+  // uart_puts("  l: Set low\r\n");
+  uart_puts("  a: Set all high\r\n");
+  uart_puts("  z: Set all low\r\n");
+  uart_puts("  q: Quit\r\n\r\n");
   uart_puts("GPIO> ");
   gpio_cmd = uart_getchar();
   uart_putchar(gpio_cmd);
@@ -120,21 +125,21 @@ while(1)
       gpio_print_status();
       break;
       
-    case 'o':
-    case 'O':
-      uart_puts("Pin (0-7): ");
-      pin = uart_getchar() - '0';
-      uart_putchar(pin + '0');
-      uart_puts("\r\n");
-      if (pin < 8) {
-        gpio_set_pin_output(pin);
-        uart_puts("Pin ");
-        uart_putchar(pin + '0');
-        uart_puts(" set as OUTPUT\r\n");
-      } else {
-        uart_puts("Invalid pin! Use 0-7\r\n");
-      }
-      break;
+    // case 'o':
+    // case 'O':
+    //   uart_puts("Pin (0-7): ");
+    //   pin = uart_getchar();
+    //   uart_putchar(pin + '0');
+    //   uart_puts("\r\n");
+    //   if (pin < 8) {
+    //     gpio_set_pin_output(pin);
+    //     uart_puts("Pin ");
+    //     uart_putchar(pin + '0');
+    //     uart_puts(" set as OUTPUT\r\n");
+    //   } else {
+    //     uart_puts("Invalid pin! Use 0-7\r\n");
+    //   }
+    //   break;
       
     case 'i':
     case 'I':
@@ -152,65 +157,65 @@ while(1)
       }
       break;
       
-    case 'h':
-    case 'H':
-      uart_puts("Pin (0-7): ");
-      pin = uart_getchar() - '0';
-      uart_putchar(pin + '0');
-      uart_puts("\r\n");
-      if (pin < 8) {
-        gpio_set_pin(pin);
-        uart_puts("Pin ");
-        uart_putchar(pin + '0');
-        uart_puts(" set HIGH\r\n");
-      } else {
-        uart_puts("Invalid pin! Use 0-7\r\n");
-      }
-      break;
+    // case 'h':
+    // case 'H':
+    //   uart_puts("Pin (0-7): ");
+    //   pin = uart_getchar() - '0';
+    //   uart_putchar(pin + '0');
+    //   uart_puts("\r\n");
+    //   if (pin < 8) {
+    //     gpio_set_pin(pin);
+    //     uart_puts("Pin ");
+    //     uart_putchar(pin + '0');
+    //     uart_puts(" set HIGH\r\n");
+    //   } else {
+    //     uart_puts("Invalid pin! Use 0-7\r\n");
+    //   }
+    //   break;
       
-    case 'l':
-    case 'L':
-      uart_puts("Pin (0-7): ");
-      pin = uart_getchar() - '0';
-      uart_putchar(pin + '0');
-      uart_puts("\r\n");
-      if (pin < 8) {
-        gpio_clear_pin(pin);
-        uart_puts("Pin ");
-        uart_putchar(pin + '0');
-        uart_puts(" set LOW\r\n");
-      } else {
-        uart_puts("Invalid pin! Use 0-7\r\n");
-      }
-      break;
+    // case 'l':
+    // case 'L':
+    //   uart_puts("Pin (0-7): ");
+    //   pin = uart_getchar() - '0';
+    //   uart_putchar(pin + '0');
+    //   uart_puts("\r\n");
+    //   if (pin < 8) {
+    //     gpio_clear_pin(pin);
+    //     uart_puts("Pin ");
+    //     uart_putchar(pin + '0');
+    //     uart_puts(" set LOW\r\n");
+    //   } else {
+    //     uart_puts("Invalid pin! Use 0-7\r\n");
+    //   }
+    //   break;
       
-    case 't':
-    case 'T':
-      uart_puts("Pin (0-7): ");
-      pin = uart_getchar() - '0';
-      uart_putchar(pin + '0');
-      uart_puts("\r\n");
-      if (pin < 8) {
-        gpio_toggle_pin(pin);
-        uart_puts("Pin ");
-        uart_putchar(pin + '0');
-        uart_puts(" toggled\r\n");
-      } else {
-        uart_puts("Invalid pin! Use 0-7\r\n");
-      }
-      break;
+    // case 't':
+    // case 'T':
+    //   uart_puts("Pin (0-7): ");
+    //   pin = uart_getchar() - '0';
+    //   uart_putchar(pin + '0');
+    //   uart_puts("\r\n");
+    //   if (pin < 8) {
+    //     gpio_toggle_pin(pin);
+    //     uart_puts("Pin ");
+    //     uart_putchar(pin + '0');
+    //     uart_puts(" toggled\r\n");
+    //   } else {
+    //     uart_puts("Invalid pin! Use 0-7\r\n");
+    //   }
+    //   break;
       
-    case 'r':
-    case 'R':
-      uart_puts("Reading all pins:\r\n");
-      gpio_print_status();
-      break;
+    // case 'r':
+    // case 'R':
+    //   uart_puts("Reading all pins:\r\n");
+    //   gpio_print_status();
+    //   break;
       
-    case 'p':
-    case 'P':
-      uart_puts("Running pattern test...\r\n");
-      gpio_test_pattern();
-      break;
+    // case 'p':
+    // case 'P':
+    //   uart_puts("Running pattern test...\r\n");
+    //   gpio_test_pattern();
+    //   break;
       
     case 'a':
     case 'A':
@@ -227,6 +232,9 @@ while(1)
       gpio_write_port(0x00);
       gpio_print_status();
       break;
+    case 'q':
+    case 'Q':
+     return; 
       
     default:
       uart_puts("Unknown GPIO command\r\n");

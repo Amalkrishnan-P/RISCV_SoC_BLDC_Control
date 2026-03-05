@@ -22,6 +22,10 @@
    "Type" : "verilog"
   },
   {
+   "Path" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/i2c_wrap.v",
+   "Type" : "verilog"
+  },
+  {
    "Path" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/leds.v",
    "Type" : "verilog"
   },
@@ -51,10 +55,6 @@
   },
   {
    "Path" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/uart_wrap.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "C:/users/amal/Documents/RISCV_SoC_BLDC/fpga_project_final_soc/src/i2c_wrap.v",
    "Type" : "verilog"
   },
   {

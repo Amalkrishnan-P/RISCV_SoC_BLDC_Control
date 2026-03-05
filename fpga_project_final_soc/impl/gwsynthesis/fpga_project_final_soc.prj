@@ -9,6 +9,7 @@
         <File path="C:\users\amal\Documents\RISCV_SoC_BLDC\fpga_project_final_soc\src\countdown_timer.v" type="verilog"/>
         <File path="C:\users\amal\Documents\RISCV_SoC_BLDC\fpga_project_final_soc\src\gowin_sp.v" type="verilog"/>
         <File path="C:\users\amal\Documents\RISCV_SoC_BLDC\fpga_project_final_soc\src\gpio.v" type="verilog"/>
+        <File path="C:\users\amal\Documents\RISCV_SoC_BLDC\fpga_project_final_soc\src\i2c_wrap.v" type="verilog"/>
         <File path="C:\users\amal\Documents\RISCV_SoC_BLDC\fpga_project_final_soc\src\leds.v" type="verilog"/>
         <File path="C:\users\amal\Documents\RISCV_SoC_BLDC\fpga_project_final_soc\src\picorv32.v" type="verilog"/>
         <File path="C:\users\amal\Documents\RISCV_SoC_BLDC\fpga_project_final_soc\src\pwm_generator.v" type="verilog"/>
@@ -17,7 +18,6 @@
         <File path="C:\users\amal\Documents\RISCV_SoC_BLDC\fpga_project_final_soc\src\sram.v" type="verilog"/>
         <File path="C:\users\amal\Documents\RISCV_SoC_BLDC\fpga_project_final_soc\src\top.v" type="verilog"/>
         <File path="C:\users\amal\Documents\RISCV_SoC_BLDC\fpga_project_final_soc\src\uart_wrap.v" type="verilog"/>
-        <File path="C:\users\amal\Documents\RISCV_SoC_BLDC\fpga_project_final_soc\src\i2c_wrap.v" type="verilog"/>
         <File path="C:\users\amal\Documents\RISCV_SoC_BLDC\fpga_project_final_soc\src\mem_init.v" type="verilog"/>
     </FileList>
     <OptionList>

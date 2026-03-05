@@ -60,6 +60,7 @@ C:\users\amal\Documents\RISCV_SoC_BLDC\fpga_project_final_soc\src\can_wrap.v<br>
 C:\users\amal\Documents\RISCV_SoC_BLDC\fpga_project_final_soc\src\countdown_timer.v<br>
 C:\users\amal\Documents\RISCV_SoC_BLDC\fpga_project_final_soc\src\gowin_sp.v<br>
 C:\users\amal\Documents\RISCV_SoC_BLDC\fpga_project_final_soc\src\gpio.v<br>
+C:\users\amal\Documents\RISCV_SoC_BLDC\fpga_project_final_soc\src\i2c_wrap.v<br>
 C:\users\amal\Documents\RISCV_SoC_BLDC\fpga_project_final_soc\src\leds.v<br>
 C:\users\amal\Documents\RISCV_SoC_BLDC\fpga_project_final_soc\src\picorv32.v<br>
 C:\users\amal\Documents\RISCV_SoC_BLDC\fpga_project_final_soc\src\pwm_generator.v<br>
@@ -68,7 +69,6 @@ C:\users\amal\Documents\RISCV_SoC_BLDC\fpga_project_final_soc\src\simpleuart.v<b
 C:\users\amal\Documents\RISCV_SoC_BLDC\fpga_project_final_soc\src\sram.v<br>
 C:\users\amal\Documents\RISCV_SoC_BLDC\fpga_project_final_soc\src\top.v<br>
 C:\users\amal\Documents\RISCV_SoC_BLDC\fpga_project_final_soc\src\uart_wrap.v<br>
-C:\users\amal\Documents\RISCV_SoC_BLDC\fpga_project_final_soc\src\i2c_wrap.v<br>
 C:\users\amal\Documents\RISCV_SoC_BLDC\fpga_project_final_soc\src\mem_init.v<br>
 </td>
 </tr>
@@ -94,7 +94,7 @@ C:\users\amal\Documents\RISCV_SoC_BLDC\fpga_project_final_soc\src\mem_init.v<br>
 </tr>
 <tr>
 <td class="label">Created Time</td>
-<td>Tue Mar  3 14:39:30 2026
+<td>Thu Mar  5 22:26:27 2026
 </td>
 </tr>
 <tr>
@@ -110,11 +110,11 @@ C:\users\amal\Documents\RISCV_SoC_BLDC\fpga_project_final_soc\src\mem_init.v<br>
 </tr>
 <tr>
 <td class="label">Synthesis Process</td>
-<td>Running parser:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0.71s, Elapsed time = 0h 0m 0.514s, Peak memory usage = 681.117MB<br/>Running netlist conversion:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s, Peak memory usage = 0MB<br/>Running device independent optimization:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 0: CPU time = 0h 0m 0.33s, Elapsed time = 0h 0m 0.329s, Peak memory usage = 681.117MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 1: CPU time = 0h 0m 0.149s, Elapsed time = 0h 0m 0.15s, Peak memory usage = 681.117MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 2: CPU time = 0h 0m 0.43s, Elapsed time = 0h 0m 0.416s, Peak memory usage = 681.117MB<br/>Running inference:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 0: CPU time = 0h 0m 0.099s, Elapsed time = 0h 0m 0.099s, Peak memory usage = 681.117MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 1: CPU time = 0h 0m 0.03s, Elapsed time = 0h 0m 0.025s, Peak memory usage = 681.117MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 2: CPU time = 0h 0m 0.02s, Elapsed time = 0h 0m 0.016s, Peak memory usage = 681.117MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 3: CPU time = 0h 0m 0.009s, Elapsed time = 0h 0m 0.017s, Peak memory usage = 681.117MB<br/>Running technical mapping:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 0: CPU time = 0h 0m 0.34s, Elapsed time = 0h 0m 0.33s, Peak memory usage = 681.117MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 1: CPU time = 0h 0m 0.09s, Elapsed time = 0h 0m 0.097s, Peak memory usage = 681.117MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 2: CPU time = 0h 0m 0.099s, Elapsed time = 0h 0m 0.1s, Peak memory usage = 681.117MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 3: CPU time = 0h 0m 12s, Elapsed time = 0h 0m 12s, Peak memory usage = 683.223MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 4: CPU time = 0h 0m 0.25s, Elapsed time = 0h 0m 0.446s, Peak memory usage = 683.223MB<br/>Generate output files:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0.279s, Elapsed time = 0h 0m 0.28s, Peak memory usage = 683.223MB<br/></td>
+<td>Running parser:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0.679s, Elapsed time = 0h 0m 0.441s, Peak memory usage = 679.340MB<br/>Running netlist conversion:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s, Peak memory usage = 0MB<br/>Running device independent optimization:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 0: CPU time = 0h 0m 0.259s, Elapsed time = 0h 0m 0.257s, Peak memory usage = 679.340MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 1: CPU time = 0h 0m 0.12s, Elapsed time = 0h 0m 0.115s, Peak memory usage = 679.340MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 2: CPU time = 0h 0m 0.34s, Elapsed time = 0h 0m 0.334s, Peak memory usage = 679.340MB<br/>Running inference:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 0: CPU time = 0h 0m 0.099s, Elapsed time = 0h 0m 0.097s, Peak memory usage = 679.340MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 1: CPU time = 0h 0m 0.019s, Elapsed time = 0h 0m 0.025s, Peak memory usage = 679.340MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 2: CPU time = 0h 0m 0.02s, Elapsed time = 0h 0m 0.017s, Peak memory usage = 679.340MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 3: CPU time = 0h 0m 0.019s, Elapsed time = 0h 0m 0.017s, Peak memory usage = 679.340MB<br/>Running technical mapping:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 0: CPU time = 0h 0m 0.34s, Elapsed time = 0h 0m 0.333s, Peak memory usage = 679.340MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 1: CPU time = 0h 0m 0.099s, Elapsed time = 0h 0m 0.097s, Peak memory usage = 679.340MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 2: CPU time = 0h 0m 0.099s, Elapsed time = 0h 0m 0.103s, Peak memory usage = 679.340MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 3: CPU time = 0h 0m 12s, Elapsed time = 0h 0m 12s, Peak memory usage = 680.855MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 4: CPU time = 0h 0m 0.25s, Elapsed time = 0h 0m 0.435s, Peak memory usage = 680.855MB<br/>Generate output files:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0.259s, Elapsed time = 0h 0m 0.263s, Peak memory usage = 680.855MB<br/></td>
 </tr>
 <tr>
 <td class="label">Total Time and Memory Usage</td>
-<td>CPU time = 0h 0m 14s, Elapsed time = 0h 0m 14s, Peak memory usage = 683.223MB</td>
+<td>CPU time = 0h 0m 14s, Elapsed time = 0h 0m 14s, Peak memory usage = 680.855MB</td>
 </tr>
 </table>
 <h1><a name="resource">Resource</a></h1>
