@@ -109,7 +109,6 @@ riscv64-unknown-elf-nm --numeric-sort prog.elf
 Notes and Warnings
 ------------------
 
-- code minimal
 - Avoid large global or static variables, now testing
 - Assume no automatic memory initialization
 - No interrupts for now : use polling only
